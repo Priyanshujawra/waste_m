@@ -23,7 +23,7 @@ const Login = () => {
     onSubmit: async (values) => {
       try {
         const { data } = await axios.post(
-          "http://localhost:5000/api/login",
+          "https://waste-m-priyanshujawras-projects.vercel.app/api/login",
           values
         );
         login(data);
