@@ -108,7 +108,7 @@ const HeroSection = () => {
                     </div>
                     <div className="relative h-96 overflow-hidden rounded-lg">
                       <img
-                        src="/src/assets/istockphoto-1340716614-612x612.jpg"
+                        src="src/assets/istockphoto-1340716614-612x612.jpg"
                         alt="Factory"
                         className="w-full h-full object-cover"
                       />
