@@ -1,0 +1,92 @@
+.preview {
+  max-width: 800px; /* Limit width for better readability */
+  margin: 0 auto; /* Center the content */
+  padding: 1.5rem; /* Add padding */
+  color: #4a4a4a; /* Default text color */
+}
+
+.preview p {
+  font-size: 1.125rem; /* Font size for paragraphs */
+  line-height: 1.75; /* Space between lines for readability */
+  margin-bottom: 1.5rem; /* Space below paragraphs */
+  color: #4b5563; /* Paragraph text color */
+}
+
+.preview h2 {
+  font-size: 1.5rem; /* Font size for h2 headings */
+  font-weight: 700; /* Bold font for headings */
+  margin-top: 2rem; /* Space above headings */
+  margin-bottom: 0.5rem; /* Space below headings */
+  color: #6b46c1; /* Heading color */
+}
+
+.preview blockquote {
+  font-size: 1.125rem; /* Font size for blockquotes */
+  margin: 1.5rem 0; /* Space around blockquotes */
+  padding-left: 1rem; /* Indent blockquote */
+  border-left: 4px solid #6b46c1; /* Left border color */
+  color: #4b5563; /* Blockquote text color */
+  background-color: #f7fafc; /* Light background for blockquote */
+}
+
+.preview blockquote::before {
+  content: "“"; /* Opening quotation mark */
+  font-size: 3rem; /* Size of the quote mark */
+  color: #6b46c1; /* Color for the quote mark */
+  position: relative;
+  left: -10px; /* Adjust position */
+}
+
+.preview blockquote::after {
+  content: "”"; /* Closing quotation mark */
+  font-size: 3rem; /* Size of the quote mark */
+  color: #6b46c1; /* Color for the quote mark */
+  position: relative;
+  right: -10px; /* Adjust position */
+}
+
+.preview .bg-purple-50 {
+  background-color: #faf5ff; /* Light purple background */
+}
+
+.preview .rounded-xl {
+  border-radius: 0.75rem; /* Rounded corners */
+}
+
+.preview .p-6 {
+  padding: 1.5rem; /* Padding for inner elements */
+}
+
+.preview .border-l-4 {
+  border-left-width: 4px; /* Width of the left border */
+}
+
+.preview .border-purple-500 {
+  border-color: #805ad5; /* Purple border color */
+}
+
+.preview .hover\:shadow-lg:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px 0 rgba(0, 0, 0, 0.05); /* Shadow effect on hover */
+}
+
+.preview .transition-shadow {
+  transition: box-shadow 0.2s ease-in-out; /* Transition effect */
+}
+
+/* Additional enhancements */
+.preview img {
+  max-width: 100%; /* Responsive images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0.5rem; /* Rounded corners for images */
+}
+
+.preview ul {
+  list-style-type: disc; /* Default bullet points */
+  padding-left: 1.5rem; /* Indent for lists */
+  margin-bottom: 1.5rem; /* Space below lists */
+}
+
+.preview li {
+  margin-bottom: 0.5rem; /* Space between list items */
+}

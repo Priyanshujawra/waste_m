@@ -1,0 +1,29 @@
+.transforskew {
+  position: relative;
+  /* width: 120px; */
+  padding: 10px 20px 10px 10px;
+  font-size: 17px;
+  position: relative;
+  margin: 1.5rem;
+  transform-origin: top right;
+  -ms-transform: skew(-25deg, 0deg);
+  -webkit-transform: skew(-25deg, 0deg);
+  transform: skew(-25deg, 0deg);
+  border-radius: 6px;
+  color: #000000;
+  background: #86f786;
+}
+
+.transforskewx {
+  position: relative;
+  /* width: 120px; */
+  padding: 10px 20px 10px 10px;
+  font-size: 17px;
+  position: relative;
+  transform-origin: top right;
+
+  transform: skew(25deg, 0deg);
+  border-radius: 6px;
+  color: #ffffff;
+  background: #000000;
+}

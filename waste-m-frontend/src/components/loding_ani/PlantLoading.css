@@ -1,0 +1,82 @@
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #e0f7fa, #80cbc4);
+}
+
+.plant {
+  animation: sway 3s infinite ease-in-out;
+}
+
+.plant-svg {
+  width: 100px;
+  height: 100px;
+}
+
+.growing-stem {
+  animation: grow-stem 2s ease-in-out infinite;
+}
+
+.growing-leaf {
+  animation: grow-leaf 2s ease-in-out infinite 0.5s;
+  transform-origin: center;
+}
+
+.leaf-sway {
+  animation: sway-leaves 3s infinite ease-in-out;
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+}
+
+@keyframes grow-stem {
+  0% {
+    stroke-dasharray: 0, 40;
+  }
+  50% {
+    stroke-dasharray: 20, 40;
+  }
+  100% {
+    stroke-dasharray: 0, 40;
+  }
+}
+
+@keyframes grow-leaf {
+  0% {
+    stroke-dasharray: 0, 30;
+  }
+  50% {
+    stroke-dasharray: 15, 30;
+  }
+  100% {
+    stroke-dasharray: 0, 30;
+  }
+}
+
+@keyframes sway-leaves {
+  0%,
+  100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+.loading-text {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #388e3c;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #4caf50;
+}
