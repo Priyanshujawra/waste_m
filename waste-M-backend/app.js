@@ -39,7 +39,9 @@ app.use(
     credentials: true,
   })
 );
-
+app.use("/", (req, res) => {
+  res.send("Hello from server");
+});
 // Existing Routes
 app.use("/api", authRoutes);
 app.use("/api/blogs", blogRoutes);
