@@ -32,6 +32,7 @@ const io = new Server(server, {
 app.use("/uploads", express.static("uploads"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
 const corsconfig = {
   origin: "*",
   methods: ["GET", "POST", "PUT", "DELETE"],
@@ -39,6 +40,17 @@ const corsconfig = {
 };
 app.options("", cors(corsconfig));
 app.use(cors(corsconfig));
+
+app.use(
+  cors({
+    origin: "https://hotel-backend-xi.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
+app.use("/", (req, res) => {
+  res.send("Hello from server");
+});
 
 // Existing Routes
 app.use("/api", authRoutes);

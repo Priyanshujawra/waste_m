@@ -33,6 +33,11 @@ const Navbar = () => {
             <button class="relative overflow-hidden bg-black text-white font-semibold py-2 px-5 w-32 text-sm uppercase cursor-pointer transform -skew-x-[21deg] transition-all">
               <span class="inline-block transform skew-x-[21deg]">Login</span>
             </button>
+            <Link to="/register" >
+            <button class="relative ml-2 overflow-hidden bg-black text-white font-semibold py-2 px-5 w-32 text-sm uppercase cursor-pointer transform -skew-x-[21deg] transition-all">
+              <span class="inline-block transform skew-x-[21deg]">Register</span>
+            </button>
+          </Link>
           </Link>
 
           <button

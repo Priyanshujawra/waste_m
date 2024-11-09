@@ -23,7 +23,7 @@ const Signup = () => {
     onSubmit: async (values) => {
       try {
         const { data } = await axios.post(
-          "http://localhost:5000/api/register",
+          "https://waste-m-priyanshujawras-projects.vercel.app/api/register",
           values
         );
         alert("Registration successful");
