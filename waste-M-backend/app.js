@@ -32,13 +32,13 @@ const io = new Server(server, {
 app.use("/uploads", express.static("uploads"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(
-  cors({
-    origin: "http://localhost:5173",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-  })
-);
+const corsconfig = {
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true,
+};
+app.options("", cors(corsconfig));
+app.use(cors(corsconfig));
 
 // Existing Routes
 app.use("/api", authRoutes);
